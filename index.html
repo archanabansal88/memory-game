@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+
+        <section class="score-panel">
+            <!-- number of star rating -->
+        	<ul class="stars">
+        		
+        	</ul>
+            <!-- number of moves -->
+        	<span class="moves">0</span> Moves
+
+            <!--timer -->
+            <span class="time">  00:00  </span>  time
+
+            <!--restart button -->
+            <div class="restart">
+        		<i class="fa fa-repeat"></i>
+        	</div>
+
+        </section>
+
+        <!--card container holding all the cards -->
+        <ul class="deck">
+           
+        </ul>
+        <!-- congratulations Popup -->
+         <div class="replay">
+            <div class="win"></div>
+            <button class="play-again">Play Again!!</button>
+        </div>
+    </div>
+    <script src="./lib/jquery.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
