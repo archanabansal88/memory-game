@@ -51,7 +51,7 @@ h1 {
     margin: 0 0 3em;
 }
 
-.deck .card {
+.card {
     height: 125px;
     width: 125px;
     background: #344;
@@ -63,6 +63,7 @@ h1 {
     justify-content: center;
     align-items: center;
     box-shadow: 5px 2px 20px 0 #344;
+    margin: 5px 5px;
 }
 
 .deck .card.open {
@@ -87,7 +88,7 @@ h1 {
 
 .score-panel {
     text-align: left;
-    width: 345px;
+    width: 375px;
     margin-bottom: 10px;
 }
 
@@ -117,7 +118,6 @@ h1 {
 
 .replay {
     width: 700px;
-    margin: auto;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -129,6 +129,7 @@ h1 {
     flex-wrap: wrap;
     flex-flow: column;
     justify-content: center;
+    margin: auto;
 }
 .replay.gameOver {
     z-index: 1;
@@ -153,3 +154,64 @@ h1 {
 .inline-block {
     display: inline-block;
 }
+
+/** styles for responsive page **/
+
+@media only screen and (max-width: 450px) {
+    .deck {
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+    .card {
+        height: calc(100vw/3);
+        width: calc(100vw/3);
+        margin: 10px;
+    }
+
+    .score-panel {
+        width: 200px;
+    }
+    .replay {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+    .deck {
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+    }
+    .card {
+        height: calc(100vw/5);
+        width: calc(100vw/5);
+        margin: 10px 5px;
+    }
+
+    .score-panel {
+        width: 250px;
+    }
+    .replay {
+        width: 450px;
+    }
+}
+/*
+@media only screen and (min-width: 768px) {
+    .deck {
+        width: 660px;
+        justify-content: space-between;
+        margin: 0 0 3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card {
+        height: 125px;
+        width: 125px;
+    }
+
+    .replay {
+        width: 700px;
+    }
+}
+*/
