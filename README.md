@@ -22,11 +22,10 @@ The game ends once all cards have been correctly matched.
 ### Special Features
 
 - The game features a timer to keep track of how long it takes to win and reports time on win screen
-- The player starts out with a three star rating -- but the rating drops the more moves it take to complete the game
+- The player starts out with a three star rating but the rating drops,the more moves it take to complete the game
 - When the game ends, a pop-up appears with the elapsed time, number of moves, final star rating and a restart button
 
+## How to run the application Locally
 
-## What you can gain
-Try to win the game with less moves and you will be awarded with more stars. 
-
-Good luck.   
+* clone/download the repository
+* open index.html on the browser   
